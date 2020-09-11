@@ -14,16 +14,33 @@
   --LightAccent: #968fab;
   --BrandColor: #8a1bb1;
   --DarkShades: #1b1c26;
-  --DarkAccent: #5666ac;
+  --DarkAccent: #262735;
 }
 
 html,
 body {
-  font-family: "Open Sans", sans-serif;
+  /*font-family: "Open Sans", sans-serif;*/
+  font-family: "Source Code Pro", monospace;
 
   margin: 0;
-
   height: 100vh;
+  background-color: var(--DarkShades);
+  color: var(--LightShades);
+
+}
+
+h1{
+  padding: 0;
+  margin: 0.1rem;
+  font-size: 3rem;
+}
+
+.container{
+  width: calc(100vw - 50vmax);
+
+  margin-left: 25vmax;
+  margin-right: 25vmax;
+
 }
 
 ul {
@@ -37,26 +54,72 @@ a {
 }
 
 .navbar {
-  z-index: 1;
-  position: absolute;
+  z-index: 2;
   height: 4rem;
   width: 100%;
+  position: fixed;
+  display: flex;
+  top: 0;
   background-color: var(--DarkShades);
-  color: var(--LightShades);
-
-  font-family: "Source Code Pro", monospace;
+  border-bottom: var(--DarkAccent) solid 2px;
 }
-
+.navbar h1{
+  font-size: 2rem;
+}
 .navbar-nav {
+  margin: 0;
+  padding: 0;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 100%;
 }
 
+.navbar-item{
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar-item .i{
+  transition: all 0.25s ease-out;
+}
+
+.navbar-item .i:hover, .navbar-item .i:focus{
+  color: var(--LightAccent);
+  border-bottom: var(--BrandColor) solid 3px;
+}
+
 header {
-  z-index: 0;
+  margin-top: 6rem;
+  min-height: 100vmin;
+}
+
+header img{
+  margin-top: 15%;
   width: 100%;
-  height: 100vmin;
-  background-color: var(--DarkShades);
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px #000;
+  transition: all .5s;
+}
+
+header img:hover{
+  transform: scale(1.2);
+  box-shadow: 0px 10px 20px #000;
+}
+
+section{
+  margin-bottom: 10rem;
+}
+
+.section1{
+  filter:hue-rotate(175deg);
+}
+
+
+
+footer{
+  border-top: var(--DarkAccent) solid 2px;
+  height: 2vh;
 }
