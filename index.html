@@ -9,20 +9,20 @@
     <title>Personal Website</title>
   </head>
   <body>
-    <nav class="navbar" id="#home">
+    <nav class="navbar">
       <div class="container">
         <ul class="navbar-nav">
           <li class="navbar-item">
-            <a href=""><h1 class="i">Voro282</h1></a>
+            <a href="#home"><h1 class="i">Voro</h1></a>
           </li>
           <li class="navbar-item">
             <a href="#about" class="i">About</a>
           </li>
           <li class="navbar-item">
-            <a href="#active-projects" class="i">Active projects</a>
+            <a href="#showcase" class="i">Showcase</a>
           </li>
           <li class="navbar-item">
-            <a href="#showcase" class="i">Showcase</a>
+            <a href="#active-projects" class="i">Active projects</a>
           </li>
           <li class="navbar-item">
             <a href="https://github.com/voro282" class="i">Github</a>
@@ -31,33 +31,42 @@
       </div>
     </nav>
     <header class="container">
-        <div class="card">
-          <h1 id="hero1">Developing for <b style="color: cornflowerblue;">the web</b></h1>
-          <h1>With <b style="color:lightgreen;">Vue.js</b></h1>
-          <h1>since <b style="color:orange;">2019</b></h1>
-        </div>
+        <div id="home" class="anchour-point" style="margin-top:0;"></div> 
+        <section id="landingPageText">
+          <h1>Developing for <b style="color: cornflowerblue;" id="platform">the web</b></h1>
+          <h1>With <b style="color:var(--Vue);" id="language">Vue.js</b></h1>
+          <h1>since <b style="color:orange;" id="year">2019</b></h1>
+        </section>
         <img src="Img\web-html.JPG" alt="VScode" srcset="">
     </header>
     <main>
-      <section id="#about" class="section1">
-        <article class="container">
-          <h1>About</h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos
-          itaque quis dolores aut consectetur ab quod pariatur. Ipsa fugiat dolores
-          ratione pariatur sequi voluptatem repellat iure possimus fugit tempora?
-          <br> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. In, delectus assumenda! Earum voluptatem ut porro at assumenda deleniti minus cum incidunt architecto fugit corrupti placeat quos quidem natus, perspiciatis eligendi!
-          <br>
-          <br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate ab est nam rem illo vero maxime blanditiis libero temporibus facilis. Magni quisquam culpa quis, vitae dolores omnis quaerat modi eius?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est amet quas, expedita ratione commodi, eligendi nesciunt doloremque quos doloribus explicabo laboriosam, qui porro in nemo excepturi reiciendis tempore minima beatae.
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nobis temporibus dolores harum? Nobis aspernatur commodi dolorem iure possimus quis, nesciunt dicta laboriosam hic ipsa saepe dolor accusamus numquam vitae.
-          <br>
-          <br>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus repudiandae vitae animi beatae itaque officia non aut reiciendis reprehenderit quam, incidunt praesentium, laboriosam optio cupiditate quasi delectus. Laborum, aut incidunt!
+      <section >
+        <div id="showcase" class="container anchour-point"></div>
+        <article class="container">  
+          <h1>Showcase</h1>      
+          <section class="carousel">
+            <button class="cros_btn"> < </button>
+            <div class="cros_trk-cnt">
+              <ul class="cros_trk">
+                <li class="crps_sld">
+                  <img src="Img\web-html.JPG" alt="VScode" srcset="">
+
+                </li>
+                <li class="crps_sld">
+                  <h1>Hello</h1>
+                </li>
+                <li class="crps_sld">
+                  <h1>Hello</h1>
+                  <img src="Img\web-html.JPG" alt="VScode" srcset="">
+                </li>
+              </ul>
+            </div>         
+            <button class="cros_btn"> > </button>
+          </section>
         </article>
       </section>
-      <section id="#about" class="section1">
+      <section >
+        <div id="active-projects" class="container anchour-point"></div>
         <article class="container">        
           <h1>Active Projects</h1>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos
@@ -75,9 +84,10 @@
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus repudiandae vitae animi beatae itaque officia non aut reiciendis reprehenderit quam, incidunt praesentium, laboriosam optio cupiditate quasi delectus. Laborum, aut incidunt!
         </article>
       </section>
-      <section id="#about" class="section1">
-        <article class="container">  
-          <h1>Showcase</h1>      
+      <section >
+        <div id="about" class="container anchour-point"></div>
+        <article class="container">
+          <h1>About</h1>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quos
           itaque quis dolores aut consectetur ab quod pariatur. Ipsa fugiat dolores
           ratione pariatur sequi voluptatem repellat iure possimus fugit tempora?
@@ -95,5 +105,6 @@
       </section>
     </main>
     <footer></footer>
+    <script src="JS/app.js"></script>
   </body>
 </html>

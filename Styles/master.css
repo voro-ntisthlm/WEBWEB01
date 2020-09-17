@@ -15,10 +15,23 @@
   --BrandColor: #8a1bb1;
   --DarkShades: #1b1c26;
   --DarkAccent: #262735;
+
+  /*Diffrent brand colors*/
+  --Vue: #4fc08d;
+  --Blender: #EB5E28;
+
+  --Cs: #9B6CD6;
+  --Cpp: #649BD3;
+  --JS: #f7e018;
+  --CSS: #214CE5;
+  --Html: #E54C21;
+  --PHP: #787CB4;
 }
 
 html,
 body {
+  scroll-behavior: smooth;
+
   /*font-family: "Open Sans", sans-serif;*/
   font-family: "Source Code Pro", monospace;
 
@@ -35,14 +48,25 @@ h1{
   font-size: 3rem;
 }
 
-.container{
-  width: calc(100vw - 50vmax);
 
-  margin-left: 25vmax;
-  margin-right: 25vmax;
+/*This is what the navbar will scroll to, it also acts as a divider*/
+.anchour-point{
+  border-top: var(--DarkAccent) solid 2px;
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+}
+
+.container{
+  margin-left: 50vmin;
+
+  width: calc(100vw - 100vmin);
+
+  margin-right: 50vmin;
 
 }
 
+
+/*Navbar stuff*/
 ul {
   list-style-type: none;
   margin: 0;
@@ -91,8 +115,9 @@ a {
   border-bottom: var(--BrandColor) solid 3px;
 }
 
+
+/*Header stuff*/
 header {
-  margin-top: 6rem;
   min-height: 100vmin;
 }
 
@@ -109,17 +134,16 @@ header img:hover{
   box-shadow: 0px 10px 20px #000;
 }
 
-section{
-  margin-bottom: 10rem;
-}
-
-.section1{
-  filter:hue-rotate(175deg);
+.header-underline{
+  border-bottom: 2px var(--Cpp);
 }
 
 
-
+/*Footer stuff*/
 footer{
+  margin-top: 10rem;
   border-top: var(--DarkAccent) solid 2px;
-  height: 2vh;
+  height: 20vh;
 }
+
+
