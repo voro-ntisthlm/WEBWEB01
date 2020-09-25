@@ -40,6 +40,7 @@ body {
   background-color: var(--DarkShades);
   color: var(--LightShades);
 
+  transition: all 0.25s ease-out;
 }
 
 h1{
@@ -57,12 +58,11 @@ h1{
 }
 
 .container{
-  margin-left: 50vmin;
 
-  width: calc(100vw - 100vmin);
-
-  margin-right: 50vmin;
-
+  width: min(100vmin, calc(100vmax - 100vmin));
+  
+  margin-left: clamp(0,25vmin, auto);
+  margin-right: clamp(0,25vmin, auto);
 }
 
 
@@ -147,3 +147,15 @@ footer{
 }
 
 
+.read-more{
+  position: relative;
+  color: var(--BrandColor);
+  padding: 0.5rem;
+  border: 2px solid var(--BrandColor); /* Green */
+  margin-top: 2rem;
+}
+
+.read-more:hover{
+  background: var(--BrandColor);
+  color: var(--LightShades);
+}
