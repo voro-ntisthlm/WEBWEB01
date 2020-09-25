@@ -57,14 +57,13 @@ h1{
   margin-bottom: 5rem;
 }
 
+
+
 .container{
-
-  width: min(100vmin, calc(100vmax - 100vmin));
-  
-  margin-left: clamp(0,25vmin, auto);
-  margin-right: clamp(0,25vmin, auto);
+  max-width: 1200px;
+  width: 50vmax;
+  margin:auto;
 }
-
 
 /*Navbar stuff*/
 ul {
@@ -144,18 +143,43 @@ footer{
   margin-top: 10rem;
   border-top: var(--DarkAccent) solid 2px;
   height: 20vh;
+  text-align: center;
+  justify-content: center;
 }
 
 
-.read-more{
-  position: relative;
-  color: var(--BrandColor);
+.btn{
   padding: 0.5rem;
-  border: 2px solid var(--BrandColor); /* Green */
   margin-top: 2rem;
+}
+
+.read-more{
+  border: 2px solid var(--BrandColor);
+  color: var(--BrandColor);
 }
 
 .read-more:hover{
   background: var(--BrandColor);
   color: var(--LightShades);
+}
+
+
+/*Making this thing responsive*/
+@media only screen and (max-width: 800px) {
+  h1{
+    padding: 0;
+    margin: 0.1rem;
+    font-size: 2.5rem;
+  }
+  .container{
+    margin-right: 1.2rem;
+    margin-left: 1.2rem;
+    width: auto;
+    
+  }
+
+  .btn.read-more{
+    padding-left: auto;
+    padding-right: auto;
+  }
 }
