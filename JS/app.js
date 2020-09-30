@@ -26,7 +26,6 @@ async function changeLandingPage(){
 
 function lptHTML(){
     lpt.innerHTML = null;
-    console.log(lpt.innerHTML);
 
     /* To much spaggeti*/
     /*

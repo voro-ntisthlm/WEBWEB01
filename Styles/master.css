@@ -26,7 +26,12 @@
   --CSS: #214CE5;
   --Html: #E54C21;
   --PHP: #787CB4;
+
+
+  font-size: 1.75vh;
 }
+
+
 
 html,
 body {
@@ -36,7 +41,7 @@ body {
   font-family: "Source Code Pro", monospace;
 
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--DarkShades);
   color: var(--LightShades);
 
@@ -52,7 +57,7 @@ h1{
 
 /*This is what the navbar will scroll to, it also acts as a divider*/
 .anchour-point{
-  border-top: var(--DarkAccent) solid 2px;
+  border-top: var(--DarkAccent) solid 0.2rem;
   margin-top: 6rem;
   margin-bottom: 5rem;
 }
@@ -64,7 +69,6 @@ h1{
 
 
 .container{
-  max-width: 1200px;
   width: 50vmax;
   margin:auto;
 }
@@ -88,7 +92,7 @@ a {
   display: flex;
   top: 0;
   background-color: var(--DarkShades);
-  border-bottom: var(--DarkAccent) solid 2px;
+  border-bottom: var(--DarkAccent) solid 0.2rem;
 }
 .navbar h1{
   font-size: 2rem;
@@ -106,7 +110,7 @@ a {
   float: left;
   text-align: center;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1rem;
 }
 
 .navbar-item .i{
@@ -115,7 +119,7 @@ a {
 
 .navbar-item .i:hover, .navbar-item .i:focus{
   color: var(--LightAccent);
-  border-bottom: var(--BrandColor) solid 3px;
+  border-bottom: var(--BrandColor) solid 0.2rem;
 }
 
 
@@ -125,7 +129,8 @@ header {
 }
 
 header img{
-  margin-top: 15%;
+  margin-top: auto;
+  margin-bottom: 0%;
   width: 100%;
   border-radius: 10px;
   box-shadow: 0px 2px 10px #000;
@@ -145,8 +150,8 @@ header img:hover{
 /*Footer stuff*/
 footer{
   margin-top: 10rem;
-  border-top: var(--DarkAccent) solid 2px;
-  height: 20vh;
+  border-top: var(--DarkAccent) solid 0.2rem;
+  height: 10rem;
   text-align: center;
   justify-content: center;
 }
@@ -158,13 +163,25 @@ footer{
 }
 
 .read-more{
-  border: 2px solid var(--BrandColor);
+  border: 0.05rem solid var(--BrandColor);
   color: var(--BrandColor);
 }
 
 .read-more:hover{
   background: var(--BrandColor);
   color: var(--LightShades);
+}
+
+.grid-showcasse{
+  display: grid;
+  gap: 1rem;
+
+
+  grid-template-columns: repeat(auto-fit);
+}
+
+.grid-template{
+
 }
 
 
@@ -185,5 +202,13 @@ footer{
   .btn.read-more{
     padding-left: auto;
     padding-right: auto;
+  }
+
+  header{
+    height: 100vh;
+  }
+
+  #landingPageText h1{
+    font-size: 2rem;
   }
 }
