@@ -177,8 +177,14 @@ footer{
   gap: 1rem;
 
 
-  grid-template-columns: repeat(auto-fit);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+.grid-card{
+  border: 0.2rem solid var(--DarkAccent) ;
+  border-radius: 0.2rem;
+}
+
 
 .grid-template{
 
