@@ -176,7 +176,6 @@ footer{
   display: grid;
   gap: 1rem;
 
-
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -192,7 +191,7 @@ footer{
 
 
 /*Making this thing responsive*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   :root{
     font-size: 16px;
   }
