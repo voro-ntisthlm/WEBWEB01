@@ -129,7 +129,7 @@ header {
 }
 
 header img{
-  margin-top: auto;
+  margin-top: 30%;
   margin-bottom: 0%;
   width: 100%;
   border-radius: 10px;
@@ -179,14 +179,28 @@ footer{
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.grid-showcasse.layout{
+  margin-top: 1rem;
+  gap: 1rem;
+  row-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(calc(50% - 1rem), 1fr));
+}
+
 .grid-card{
   border: 0.2rem solid var(--DarkAccent) ;
   border-radius: 0.2rem;
 }
 
+.grid-card.layout{
+  border: 0;
+  border-radius: 0;
+  border-color: none;
+}
 
-.grid-template{
-
+.grid-card.filler{
+  border: 0;
+  border-radius: 0;
+  background-color: #968fab;
 }
 
 
